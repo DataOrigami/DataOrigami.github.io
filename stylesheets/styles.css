@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
+  margin:0 0 15px;
 }
 
 h1, h2, h3 {
@@ -64,7 +64,7 @@ code, pre {
 }
 
 pre {
-  padding:8px 15px;
+  padding:5px 15px;
   background: #f8f8f8;  
   border-radius:5px;
   border:1px solid #e5e5e5;
@@ -264,5 +264,8 @@ footer {
 .attention {
   font-weight: 600;
   font-size: 13pt;
+}
 
+.projectSide{
+  font-size: 13pt;
 }
