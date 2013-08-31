@@ -3,61 +3,72 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Dataorigami.github.io by DataOrigami</title>
-
+    <title>DataOrigami | Folding data into social good</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="/javascripts/jquery.localscroll-1.2.7-min.js"></script>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script>
+      $( document ).ready(function() {
+        $('#mixology').localScroll();
+      });
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-24940644-2', 'dataorigami.github.io');
+      ga('send', 'pageview');
+
+    </script>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1>Dataorigami.github.io</h1>
-        <p></p>
+        <h1>Data Origami</h1>
+        <h3 class="subheader"> Folding data into social good</h3>
+        <p>
+          <p><span class="attention">We are a group</span> of devoted volunteers dedicated to 
+            helping the local Ottawa community. Specifically, we use our 
+            tech, design and analytical skills to help non-profits find 
+            value in their data. 
 
+          <h2>Projects</h2>
+          <ol>
+            <li><a class="scroll" href="#mixology">Mixology</a></li>
+          <ol>
 
-        <p class="view"><a href="https://github.com/DataOrigami">View My GitHub Profile</a></p>
-
+        </p>
       </header>
       <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <h2 id="mixology" style="margin-bottom: 5px;">Mixology: Data Driven Drinks</h2>
+        <p><code>Sept. 17th, 2013</code></p>
+        <p>Every proper club needs a proper drink. We aim to answer:</p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <p><blockquote> Can we algorithmically find a unique club drink using a large database of cocktail drinks? </blockquote> </p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+        <p>Yes. Here are our goals to accomplish: </p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+        <p><b>Determine the ingredients:</b> (and perhaps the directions to make the cocktail, too) This may require an objective function. Using the database to weed out bad combinations is good too! Ideally the drink should have some flair to it. We should look at popularity too. </p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+        <p><b>Create a name for the cocktail:</b> (this should be data determined too) Naively, gather all names of cocktails, split on whitespace, and randomly pick. Better: considering the ingredients we have chosen, look for a pair or triplet of existing cocktails that can be "summed up" to produce our cocktail. This is like a regression task. Using Google Trends to find "hot names", i.e. "One VMA Miley" would be something hilarious. </p>
+        <p><b>Look for interesting relationships in the dataset:</b> <i>orange juice => vodka</i>? Some tools that might help: association rules, network analysis
+          
+        <p><b>Create a cool postcard-sized graphic about our cocktail:</b> (with recipe) We'll use this to create actual postcards to promote our club: "Dear P.M. Harper, I've noticed you could use a drink...". "Dear Ottawa Citizen, we have provided for you a result you might finding interesting-- the url is at ...." </p>
+          
+        <p><b>Actually drink it.</b> Can we get a local drinking establishment to serve it? Maybe exclusively to our members/meetings? Can we light it on fire? Why not?  Our next meeting will be supplied with our new Data Origami cocktail. </p>
+        <p> <a href="https://github.com/DataOrigami/mixology">Our code can be found on Github</a> </p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+        <footer>
+          <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        </footer>
       </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
     
