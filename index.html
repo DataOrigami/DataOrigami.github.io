@@ -31,40 +31,45 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Data Origami</h1>
+        <a href="/"><h1>Data Origami</h1></a>
         <h3 class="subheader"> Folding data into social good</h3>
         <p>
           <p><span class="attention">We are a group</span> of devoted volunteers dedicated to 
             helping the local Ottawa community. Specifically, we use our 
             tech, design and analytical skills to help non-profits find 
-            value in their data. </p>
+            value in their data. See our <a href="/pages/mission-statement.html">Mission Statement</a></p>
           <br/>
           <h2>Projects</h2>
-            <p><a class="projectSide" href="#mixology">Mixology</a></p>
+            
+            <ol>
+              <li><a class="projectSide" href="/#mixology">Mixology</a>
+            </ol>
 
           <br/>
           <h2>Contact</h2>
             <pre><code>info@dataorgami.com</code></pre>
-        </p>
+          
+
       </header>
       <section>
         <h2 id="mixology" style="margin-bottom: 5px;">Mixology: Data Driven Drinks</h2>
         <p><code>Sept. 17th, 2013</code></p>
         <p>Every proper club needs a proper drink. We aim to answer:</p>
 
-        <p><blockquote> Can we algorithmically find a unique club drink using a large database of cocktail drinks? </blockquote> </p>
+        <p><blockquote> Can we algorithmically find a unique club drink using a large dataset of cocktail drinks? </blockquote> </p>
 
         <p>Yes. Here are our goals to accomplish: </p>
 
         <p><b>Determine the ingredients:</b> (and perhaps the directions to make the cocktail, too) This may require an objective function. Using the database to weed out bad combinations is good too! Ideally the drink should have some flair to it. We should look at popularity too. </p>
 
         <p><b>Create a name for the cocktail:</b> (this should be data determined too) Naively, gather all names of cocktails, split on whitespace, and randomly pick. Better: considering the ingredients we have chosen, look for a pair or triplet of existing cocktails that can be "summed up" to produce our cocktail. This is like a regression task. Using Google Trends to find "hot names", i.e. "One VMA Miley" would be something hilarious. </p>
-        <p><b>Look for interesting relationships in the dataset:</b> <i>orange juice => vodka</i>? Some tools that might help: association rules, network analysis
+        <p><b>Look for interesting relationships in the dataset:</b> <i>orange juice => vodka</i>? Some algos that might help: association rules, network analysis...
           
-        <p><b>Create a cool postcard-sized graphic about our cocktail:</b> (with recipe) We'll use this to create actual postcards to promote our club: "Dear P.M. Harper, I've noticed you could use a drink...". "Dear Ottawa Citizen, we have provided for you a result you might finding interesting-- the url is at ...." </p>
+        <p><b>Create a cool postcard-sized graphic about our cocktail:</b> (with recipe) We'll use this to create actual postcards to promote our club: "Dear P.M. Harper, we've noticed you could use a drink...". "Dear Ottawa Citizen, we have provided for you a result you might finding interesting-- the url is at ...." </p>
           
         <p><b>Actually drink it.</b> Can we get a local drinking establishment to serve it? Maybe exclusively to our members/meetings? Can we light it on fire? Why not?  Our next meeting will be supplied with our new Data Origami cocktail. </p>
-        <p> <a href="https://github.com/DataOrigami/mixology">Our code can be found on Github</a> </p>
+
+        <p> <a href="https://github.com/DataOrigami/mixology">Our code/dataset can be found on Github</a> </p>
 
         <footer>
           <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
